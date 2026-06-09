@@ -1,0 +1,42 @@
+{
+  "name": "viewport-lock",
+  "version": "1.0.0",
+  "description": "Prevent pinch / double-tap zoom on mobile while keeping scroll. iOS-aware (Safari ignores user-scalable=no).",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --format=esm --outfile=dist/index.js && esbuild src/index.js --bundle --format=cjs --outfile=dist/index.cjs && cp src/index.d.ts dist/index.d.ts"
+  },
+  "keywords": [
+    "viewport",
+    "pinch-zoom",
+    "no-zoom",
+    "mobile",
+    "touch-action",
+    "ios",
+    "safari"
+  ],
+  "author": "kv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lp250isme/viewport-lock.git"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
