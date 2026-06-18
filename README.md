@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon-dark.png" alt="viewport-lock" width="120" height="120">
+</p>
+
 # viewport-lock — 行動裝置鎖縮放
 
 [English](#english) | [繁體中文](#繁體中文)
